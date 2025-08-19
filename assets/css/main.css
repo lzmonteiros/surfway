@@ -2669,7 +2669,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #fcb83c;
+			background-image: url(/surfway/images/);
 			color: #c8ece9;
 		}
 
@@ -3201,7 +3201,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #2f7fa3 ;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3890,26 +3890,23 @@ form#cadastroForm {
 form#cadastroForm input {
     padding: 12px;
     border: 2px solid #2f7fa3;
-    border-radius: 10px;
     font-size: 16px;
 }
 
 form#cadastroForm input:focus {
-    border-color: #fcb83c;
+    border-color: #2f7fa3;
     outline: none;
 }
 
 form#cadastroForm button {
-    padding: 12px;
-    background-color: #58b4c6;
+   
+    background-color: #2f7fa3;
     border: none;
-    border-radius: 10px;
-    color: white;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 form#cadastroForm button:hover {
-    background-color: #f49c38;
+    background-color: #58b4c6 ;
 }
