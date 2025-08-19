@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - SurfWay</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Estilo moderno do formulário */
+        #banner .inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #cadastroForm {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 25px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            max-width: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #cadastroForm input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        #cadastroForm input:focus {
+            border-color: #fcb83c;
+            outline: none;
+        }
+
+        #cadastroForm button {
+            padding: 14px;
+            background-color: #58b4c6;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #cadastroForm button:hover {
+            background-color: #f49c38;
+        }
+    </style>
+</head>
+<body class="landing is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">SurfWay</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="cadastro.html" class="button primary">Sign Up</a></li>
+                                <li><a href="login.html" class="button primary">Log In</a></li>
+                                <li><a href="contato.html" class="button primary">Contato</a></li>
+                                <li><a href="cameras.html" class="button primary">Câmeras</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Formulário de Cadastro -->
+        <section id="banner">
+            <div class="inner">
+                <div class="texto-inner">
+                    <h2>Cadastre-se</h2>
+                    <p>Crie sua conta e aproveite todas as funcionalidades do SurfWay</p>
+
+                    <form id="cadastroForm">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="senha" placeholder="Senha" required>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2025 SurfWay</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Redirecionamento após cadastro -->
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // evita envio padrão do formulário
+            // Redireciona para home.html após cadastro
+            window.location.href = 'home.html';
+        });
+    </script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - SurfWay</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        #contatoForm {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #contatoForm input, #contatoForm textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        #contatoForm input:focus, #contatoForm textarea:focus {
+            border-color: #fcb83c;
+            outline: none;
+        }
+
+        #contatoForm button {
+            padding: 14px;
+            background-color: #58b4c6;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #contatoForm button:hover {
+            background-color: #f49c38;
+        }
+    </style>
+</head>
+<body class="landing is-preload">
+
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1><a href="home.html">SurfWay</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="cadastro.html" class="button primary">Sign Up</a></li>
+                            <li><a href="login.html" class="button primary">Log In</a></li>
+                            <li><a href="contato.html" class="button primary">Contato</a></li>
+                            <li><a href="cameras.html" class="button primary">Câmeras</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulário de Contato -->
+    <section class="wrapper style1">
+        <div class="inner">
+            <header class="major">
+                <h2>Fale Conosco</h2>
+                <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
+            </header>
+
+            <form id="contatoForm">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; 2025 SurfWay</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+</html>

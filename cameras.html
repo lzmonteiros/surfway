@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmeras - SurfWay</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .camera-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 20px;
+        }
+
+        .camera-grid iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .camera-grid h3 {
+            text-align: center;
+            margin-top: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="landing is-preload">
+
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1><a href="home.html">SurfWay</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="cadastro.html" class="button primary">Sign Up</a></li>
+                            <li><a href="login.html" class="button primary">Log In</a></li>
+                            <li><a href="contato.html" class="button primary">Contato</a></li>
+                            <li><a href="cameras.html" class="button primary">Câmeras</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Câmeras -->
+    <section class="wrapper style1">
+        <div class="inner">
+            <header class="major">
+                <h2>Câmeras ao Vivo</h2>
+                <p>Confira as condições do mar em tempo real nas principais praias.</p>
+            </header>
+
+            <div class="camera-grid">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Praia 1" allowfullscreen></iframe>
+                    <h3>Praia 1</h3>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Praia 2" allowfullscreen></iframe>
+                    <h3>Praia 2</h3>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Praia 3" allowfullscreen></iframe>
+                    <h3>Praia 3</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; 2025 SurfWay</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
